@@ -1,0 +1,158 @@
+[
+    {
+        "deviceName" : "Redmi 3s (land)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Marvel",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/land/"
+        },
+        {
+        "deviceName" : "Redmi 5 (rosy)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Ebin",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/rosy/"
+        },
+        {
+        "deviceName" : "Redmi 7 (onclite)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "KostyaJRZ",
+        "downloadLink" : "https://github.com/PixelPlusUI-Devices/device_xiaomi_onclite/releases"
+        },
+        {
+        "deviceName" : "Redmi 9 (lancelot)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Box-boi",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/lava/"
+        },
+        {
+        "deviceName" : "Redmi Note 4 (mido)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Apon",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/mido/"
+        },
+        {
+        "deviceName" : "Redmi Note 5 Pro (whyred)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Salman",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/whyred/"
+        },
+        {
+        "deviceName" : "Redmi Note 6 Pro (tulip)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Mustafa",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/tulip/"
+        },
+        {
+        "deviceName" : "Redmi Note 7/7s (lavender)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Zaid",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/lavender/"
+        },
+        {
+        "deviceName" : "Redmi Note 7 Pro (violet)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Saurav",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/violet/"
+        },
+        {
+        "deviceName" : "Redmi Note 8/8T (ginkgo/willow)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Erwin ",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/ginkgo/"
+        },
+        {
+        "deviceName" : "Redmi Note 9 (merlin)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Box Boi",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/merlin/"
+        },
+        {
+        "deviceName" : "Xiaomi Poco F1 (beryllium)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "David",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/beryllium/"
+        },
+        {
+        "deviceName" : "Xiaomi Poco X3 (Surya)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Rizak",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/surya/"
+        },
+        {
+        "deviceName" : "Xiaomi Poco M2 (shiva)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Box-boi",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/lava/"
+        },
+        {
+        "deviceName" : "Xiaomi Mi A2 (Jasmine_sprout)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Rahul",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/jasmine_sprout/"
+        },
+        {
+        "deviceName" : "Lenovo Z5s (jd2019)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Husker",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/jd2019/"
+        },
+        {
+        "deviceName" : "OnePlus 3/3T (oneplus3)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Dinesh",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/oneplus3/"
+        },
+        {
+        "deviceName" : "Realme 1  (CPH1859/61)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Debayan",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/CPH1859/"
+        },
+        {
+        "deviceName" : "Realme 3/3i",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Eyvd",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/RMX1821/"
+        },
+        {
+        "deviceName" : "Realme 2 Pro (RMX1801)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Abhishek",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/RMX1801/"
+        },
+        {
+        "deviceName" : "Realme c3/c3i/narzo 10a (rmx2020)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Sarthak",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/rmx2020/"
+        },
+        {
+        "deviceName" : "Realme C11/C12 (RMX2185)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Aryan",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/RMX2185/"
+        },
+        {
+        "deviceName" : "Realme X (RMX1901)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Sanyam",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/RMX1901/"
+        },
+        {
+        "deviceName" : "Moto G5S+ (sanders)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Satham",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/sanders/"
+        },
+        {
+        "deviceName" : "Meizu x8 (m1852)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Dogukan",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/m1852/"
+        },
+        {
+        "deviceName" : "Asus Zenfone Max Pro M1 (X00TD)",
+        "buildVersion" : "v3.4",
+        "maintainer" : "Rajat",
+        "downloadLink" : "https://sourceforge.net/projects/pixelplusui-project/files/eleven/xoot/"
+        }
+]
