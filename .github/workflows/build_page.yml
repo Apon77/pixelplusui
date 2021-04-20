@@ -1,0 +1,26 @@
+name: Build Page
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  Build_Page:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Clone Repository
+      uses: actions/checkout@v2
+    - name: Install Packages
+      run: |
+            echo n | sudo npm install -g @angular/cli@latest
+            echo n | sudo npm install --save-dev @angular-devkit/build-angular
+    - name: Build Page
+      run: |
+            ng build --prod --output-path docs --base-href https://pixie-codes.github.io/pixelplusui/
+            cp docs/index.html docs/404.html
+    - name: Update Site
+      run: |
+            git config --global user.name "Apon77"
+            git config --global user.email "khalakuzzamanapon5@gmail.com"
+            git add .
+            git commit -m "Update Site"
+            git push
