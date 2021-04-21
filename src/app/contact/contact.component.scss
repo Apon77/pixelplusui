@@ -1,7 +1,6 @@
 .contact_label{ 
   text-transform: uppercase;
-  font-size: x-large;
-  font-weight: 500;
+  font-weight: bold;
   color: #fff;
   padding-top: 3rem;
 }
@@ -14,32 +13,35 @@
 .telegram_card a, .email_card a{ 
     color: white;  
     font-size: 17px;
-    margin: 2rem;
 }
 .telegram_card a, .email_card a{ 
     text-decoration: none;
     cursor: pointer;
 }
 
-@media only screen and (min-width: 992px){
+@media (min-width: 992px) and (min-width: 1200px){
+  .contact_label{  font-size: 2rem; }
   .contact_card{ 
     display: flex;
     margin: 4rem 9rem;
   }
-
   .telegram_card, .email_card{
     padding: 3rem;
     margin: 0 2rem;
   }
+  .telegram_card mat-card-subtitle, .email_card mat-card-subtitle,
+  .telegram_card a, .email_card a { margin: 2rem; }
 }
-@media only screen and (max-width: 600px){
+@media (min-width: 320px) and (max-width: 480px){
+  .contact_label{ font-size: 1.5rem; }
   .contact_card{ 
     margin: 2rem 1rem;
   }
   .telegram_card, .email_card{
     padding: 1rem;
-    margin: 1rem 2.5rem;
+    margin: 1rem 0.5rem;
     height: 10rem;
-    width: 30rem;
   }
+  .telegram_card mat-card-subtitle{ margin: 1.25rem; }
+  .email_card mat-card-subtitle{ margin: 0.75rem; }
 }

@@ -3,78 +3,23 @@
     display: flex;
     width: 100%;
 }
-.left_panel, .right_panel{ width: 50%; }
-.left_panel .para_one{ 
-    font-weight: 500;
-    color: #ec2020;
-}
-.left_panel .para_two{ line-height: 2; }
-.right_panel img{ margin-top: 50px; }
-
-@media only screen and (min-width: 992px){
-    .right_panel{ margin-left: 7rem; }
-    .left_panel .para_one{
-        font-size: 2.5rem;
-        width: 41rem;
-        margin-top: 6rem;
-        margin-left: 5rem ;
-    }
-    .left_panel .para_two{ 
-        font-size: large; 
-        width: 32rem; 
-        margin-left: 10rem ;
-        margin-top: 2rem;
-    }
-    .right_panel img{ width: 250px; }
-}
-
-@media only screen and (max-width: 600px){
-    .left_panel, .right_panel{ margin-left: 2rem;  }
-    .left_panel .para_one{
-        line-height: 1.30;
-        font-size: x-large; 
-        margin-top: 3rem;
-    }
-    .left_panel .para_two{  font-size: smaller; }
-    .right_panel img{ width: 200px; }
+.left_panel h1{
+    color: #DB4437;
+    text-transform: uppercase;
 }
 
                     // Features container
 .feature_card{
     margin: 1rem;
     height: 13rem;
-    border-radius: 25px;
-    background-color: white;
 }
-.feature_card mat-card-title{
-    margin-bottom: 12px;
-    color: #e0594d;
-}
-.feature_card mat-card-subtitle{
-    color: black; 
-    font-size: medium;
-}
-@media only screen and (min-width: 992px){
-    .features_container{ margin: 3rem 13rem; }
-    .feature_card{
-        width: 17rem;
-        line-height: 1.5;
-    }
-}
-@media only screen and (max-width: 600px){
-    .features_container{ margin: 3rem 1rem; }
-    .feature_card{
-        width: 15rem;
-        line-height: 1.30;
-    }
-}
+.yellow{ background-color: #F4B400; }
+.red{ background-color: #DB4437; }
+.green{ background-color: #0F9D58; }
+.feature_card mat-card-title{ margin-bottom: 12px; }
 
                     // Team container
-.team_card{ border-radius: 25px; }
-.team_card .avatar{ 
-    height: 100px;
-    border-radius: 50%;
-}
+.team_card .avatar{ border-radius: 50%; }
 .team_card mat-card-header{ 
     display: block; 
     margin: 1rem 0;
@@ -87,20 +32,6 @@
 }
 .git_icon{ height: 30px; }
 
-@media only screen and (min-width: 992px){
-    .team_container{ margin: 3rem 13.7rem; }
-    .team_card{
-        width: 16rem;
-        margin: 15px 20px;
-    }
-}
-@media only screen and (max-width: 600px){
-    .team_container{ margin: 3rem 1rem; }
-    .team_card{
-        width: 14rem;
-        margin: 15px 22px;
-    }
-}
                 // Download and Donate container
 .download_card, .donate_card{
     height: 17rem;
@@ -114,15 +45,59 @@
     color: black;
 }
 .download_btn, .donate_btn{ 
-    background-color: #da2828; 
+    background-color: #DB4437; 
     border-radius: 40px;
 }
-.download_btn, .donate_btn{ color: #fff;}
 
-@media only screen and (min-width: 992px){
-    .download_donate_container{ margin: 4rem 17rem;}
+                    // Shared
+.feature_label, .team_label, .download_donate_label{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 2rem;
+    font-weight: bold; 
+}
+.feature_card, .team_card{ border-radius: 25px; }
+.feature_card mat-card-subtitle, .feature_card mat-card-title,
+ .download_btn, .donate_btn{ color: #fff; }
+
+@media (min-width: 992px) and (min-width: 1200px){
+    .home_container{ 
+        padding-top: 4rem;
+        padding-bottom: 2.5rem;
+    }
+    .left_panel, .right_panel{ width: 50%; }
+    .left_panel{ 
+        margin-left: 5.5rem; 
+        margin-top: 8rem; 
+    }
+    .left_panel h1{
+        font-size: 4.5rem;
+        font-weight: bold;
+        line-height: 1;    
+    }
+    .left_panel p{ font-size: 1.5rem; }
+    .right_panel img{ width: 390px; }
+
+    .features_container{ padding: 3rem 13rem;}
+    .feature_label{ font-size: xxx-large; }
+    .feature_card{
+        width: 17rem;
+        line-height: 1.5;
+    }
+    .feature_card mat-card-subtitle { font-size: medium; }
+
+    .team_container{ padding: 3rem 13.7rem; }
+    .team_label{ font-size: xxx-large;}
+    .team_card{
+        width: 16rem;
+        margin: 15px 20px;
+    }
+    .team_card .avatar{ height: 100px; }
+
+    .download_donate_container{ margin: 4rem 20rem;}
+    .download_donate_label{ font-size: xxx-large; }
     .download_card, .donate_card{ 
-        margin: 2rem 3rem 0 0;
+        margin: 2rem 1rem 0 0;
         width: 21rem;
     }
     .download_btn, .donate_btn{ 
@@ -132,10 +107,39 @@
         margin-top: 1rem;
     }
 }
-@media only screen and (max-width: 600px){
-    .download_donate_container{ margin: 3rem 2rem;}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .home_container{ padding-top: 2rem;}
+    .left_panel, .right_panel{ width: 50%; }
+    .left_panel{ 
+        margin-left: 1.5rem; 
+        margin-top: 2rem;
+    }
+    .left_panel h1{
+        font-weight: bold;  
+        line-height: 1.5;  
+    }
+    .right_panel img{ width: 200px; }
+
+    .features_container{ padding: 2rem 4rem; }
+    .feature_label{ font-size: 1.23rem; }
+    .feature_card{ width: 13rem; }
+    .feature_card mat-card-title{ font-size: 1.30rem; }
+    .feature_card mat-card-subtitle { margin-top: 1rem; }
+
+    .team_container{ padding: 2rem 4rem; }
+    .team_label{ font-size: 1.23rem; }
+    .team_card{
+        width: 14rem;
+        margin: 15px 22px;
+    }
+    .team_card .avatar{ height: 80px; }
+    .mat-card-header mat-card-title{ font-size: 16px;}
+
+    .download_donate_container{ padding: 2rem 4rem; }
+    .download_donate_label{ font-size: 1.23rem; }
     .download_card, .donate_card{ 
-        margin: 2rem 1rem 0 0;
+        margin: 1rem 0 0 0;
         width: 15rem;
      }
     .download_btn, .donate_btn{
@@ -143,12 +147,4 @@
         height: 3rem;
         width: 8rem;
      }
-}
-                    // Shared
-.feature_label, .team_label, .download_donate_label{
-    text-transform: uppercase;
-    font-size: xx-large;
-    font-weight: 500; 
-    color: #ec2020;
-    margin-bottom: 2rem;
 }

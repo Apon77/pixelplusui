@@ -10,7 +10,7 @@
   font-size: 1rem;
   margin-top: 0.5rem;
 }
-.artifact_card mat-card-subtitle{ color: #fff; }
+.artifact_card mat-card-subtitle, .artifact_card button a { color: #fff; }
 .artifact_card button{ 
   background: rgb(204,66,69) !important;
   background: linear-gradient(90deg, rgba(204,66,69,1) 0%, rgba(9,9,9,1) 75%) !important;
@@ -18,48 +18,43 @@
   margin-top: 1.75rem;
 }
 .artifact_card button a{
-  color: #fff;
   font-size: large;
   text-decoration: none;
 }
 .artifact_details{  margin: 0 3rem; }
-@media only screen and (min-width: 992px){
+@media (min-width: 992px) and (min-width: 1200px){
   .expansion_container{
       margin: 2rem 22rem; 
       width: 50%;
   }
   .artifact_details{  width: 50%; }
   .artifact_card{ display: flex; }
-}
-@media only screen and (max-width: 600px){
-  .expansion_container{ margin: 2rem 2rem; }
-  .artifact_card{ text-align: center;}
-}
 
-// scroll text animation
+  // scroll text animation
 .moving_text {
   height: 50px;  
   overflow: hidden;
   position: relative;
  }
- .moving_text span {
-  font-size: 1.5em;
-  color: #fff;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  line-height: 50px;
-  text-align: center;
-  /* Starting position */
-  -moz-transform:translateX(100%);
-  -webkit-transform:translateX(100%);  
-  transform:translateX(100%);
+.moving_text span {
+    font-size: 1.5em;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
 
-  /* Apply animation to this element */  
-  -moz-animation: moving_text 15s linear infinite;
-  -webkit-animation: moving_text 15s linear infinite;
-  animation: moving_text 15s linear infinite;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);  
+    transform:translateX(100%);
+
+    /* Apply animation to this element */  
+    -moz-animation: moving_text 15s linear infinite;
+    -webkit-animation: moving_text 15s linear infinite;
+    animation: moving_text 15s linear infinite;
  }
 
  /* Move it (define the animation) */
@@ -83,3 +78,19 @@
     transform: translateX(-100%); 
        }
  }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+  .expansion_container{ margin: 2rem 2rem; }
+  .artifact_card{ text-align: center; }
+
+  .moving_text {
+    padding: 0 2rem;
+    text-align: center;
+  }
+ .moving_text span {
+  font-size: 1.25em;
+  color: #fff;
+ }
+}
+

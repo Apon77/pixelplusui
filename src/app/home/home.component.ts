@@ -4,8 +4,6 @@
 */
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { SharedService } from '../shared.service';
-import { Feature } from './home';
 
 @Component({
   selector: 'app-home',
@@ -14,15 +12,9 @@ import { Feature } from './home';
 })
 export class HomeComponent implements OnInit {
 
-  allFeatures: Feature[] = [];
+  constructor(public router:Router) {  }
 
-  constructor(private sharedService:SharedService,public router:Router) {  }
-
-  ngOnInit(){
-    this.sharedService.getFeatures().subscribe(
-      data=> { this.allFeatures = data; }
-    );
-  }
+  ngOnInit(){  }
 
   goToDownload(){
     this.router.navigate(['/download']); 

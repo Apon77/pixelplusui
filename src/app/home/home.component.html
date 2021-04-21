@@ -1,24 +1,40 @@
 <div class="home_container">
-    <div class="left_panel text_center">
-        <p class="para_one">Another custom ROM, and we like it.</p> <br>
-        <p class="para_two">PixelPlusUI is a PE based ROM with some more friendly user experience. What different in this? you ask? LET'S FIND OUT. <br><br>
-            It has a beautilful UI/UX while preserving the stock Android look by adhering to Material Design guidelines and offers great performance and stability with many awesome features and user security. But this doesn't mean our aim is to provide all the customisation available on the planet. Unlike OEMs' slow and untimely updates, we closely follow Google to bring the latest updates to our users.
-        </p>
+    <div class="left_panel">
+        <h1>Yet another pixel ROM</h1>
+        <p>How is this different you ask? LET'S FIND OUT.</p>
     </div>
     <div class="right_panel text_center">
-        <img src="./assets/images/home.png" alt="Smartphone">
+        <img src="./assets/images/home.jpg" alt="Smartphone">
     </div>
 </div>
                         <!-- Application Features -->
 <div class="features_container">
     <p class="feature_label text_center">Astonishing Features</p>
     <div class="flex">
-        <div *ngFor="let feat of allFeatures">
-            <mat-card class="feature_card text_center">
-                <mat-card-title>{{feat.title}}</mat-card-title>
-                <mat-card-subtitle>{{feat.desc}}</mat-card-subtitle>
-            </mat-card>
-        </div>
+        <mat-card class="feature_card text_center red">
+            <mat-card-title>Routine Updates</mat-card-title>
+            <mat-card-subtitle>PixelPlusUI keeps you updated with routine updates for security patches, builds and other features.</mat-card-subtitle>
+        </mat-card>
+        <mat-card class="feature_card text_center yellow">
+            <mat-card-title>Great Support</mat-card-title>
+            <mat-card-subtitle>User friendly developers always ready to help you out with your issues everytime you jump in support group.</mat-card-subtitle>
+        </mat-card>
+        <mat-card class="feature_card text_center green">
+            <mat-card-title>Customizable</mat-card-title>
+            <mat-card-subtitle>We provide useful customisation based on your requests, but this doesn't mean we can provide all the customisation available on the planet.</mat-card-subtitle>
+        </mat-card>
+        <mat-card class="feature_card text_center yellow">
+            <mat-card-title>Revamped UI</mat-card-title>
+            <mat-card-subtitle>Unlike other ROMs, we provide something new to our users with this new UI inspired by different android based skins present in market.</mat-card-subtitle>
+        </mat-card>
+        <mat-card class="feature_card text_center green">
+            <mat-card-title>Fast & Smooth</mat-card-title>
+            <mat-card-subtitle>PixelPlusUI is well optimized for better smoothness, better notch handling and fast performance for every device.</mat-card-subtitle>
+        </mat-card>
+        <mat-card class="feature_card text_center red">
+            <mat-card-title>Better Device Support</mat-card-title>
+            <mat-card-subtitle>With increasing number of developers our official list of devices is also increasing. Keep checking the list to find yours.</mat-card-subtitle>
+        </mat-card>
     </div>
 </div>
 
@@ -36,7 +52,7 @@
             <a href="https://github.com/KostyaJRZ"><img src="./assets/images/git.svg" alt="git" class="git_icon"></a>
         </mat-card>
         <mat-card class="team_card text_center">
-            <img src="./assets/images/avatar_two.jpg" alt="Avatar" class="avatar">
+            <a href="https://forum.xda-developers.com/m/sourav24071999.9437589/"><img src="./assets/images/avatar_two.jpg" alt="Avatar" class="avatar"></a>
             <mat-card-header>
                 <mat-card-title> Saurav </mat-card-title>
                 <mat-card-subtitle> Core Developer </mat-card-subtitle>

@@ -1,7 +1,6 @@
 .label{ 
-    color: #fff;
-    font-size: x-large;
-    font-weight: 500;
+    color: #DB4437;
+    font-weight: bold;
     text-transform: uppercase;
 }
 .donate_container mat-card{ border-radius: 2rem; }
@@ -10,8 +9,9 @@
     font-weight: 500;
     font-size: 0.95rem;
 }
-@media only screen and (min-width: 992px){
+@media (min-width: 992px) and (min-width: 1200px){
     .donate_container{ margin: 4rem 10rem; }
+    .label{ font-size: 3rem; }
     .donate_container mat-card{
         width: 17rem;
         margin: 4rem 2rem 2rem 2rem;
@@ -21,8 +21,9 @@
         width: 10rem;
     }
 }
-@media only screen and (max-width: 600px){
-    .donate_container{ margin: 4rem; }
+@media (min-width: 320px) and (max-width: 480px){
+    .donate_container{ margin: 3rem; }
+    .label{ font-size: 1.5rem; }
     .donate_container mat-card {
         width: 28rem;
         margin: 1rem 0;

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 992px){
+@media (min-width: 992px) and (min-width: 1200px){
     .galary_container{
         padding: 2rem 0 3rem 0;
         width: fit-content !important;
@@ -9,9 +9,9 @@
         width: 19rem;
     }
 }
-@media only screen and (max-width: 600px){
+@media (min-width: 320px) and (max-width: 480px){
     .galary_container{
-        padding: 2rem 0 3rem 7rem;
+        padding: 2rem 0.5rem 3rem 0.5rem;
         width: fit-content !important;
     }
     .galary_container img{
