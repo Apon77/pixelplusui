@@ -22,6 +22,11 @@
 								"maintainer": "Box-boi"
 							},
 							{
+								"deviceName" : "Redmi Y2 (ysl)",
+								"buildVersion" : "v3.4",
+								"maintainer": "Sushmit"
+							},
+							{
 								"deviceName" : "Redmi Note 4 (mido)",
 								"buildVersion" : "v3.4",
 								"maintainer": "Apon"
@@ -89,7 +94,7 @@
 							{
 							"deviceName" : "Xiaomi Poco M2 (shiva)",
 							"buildVersion" : "v3.4",
-							"maintainer": "Box-boi"
+							"maintainer": "Zubair"
 							},
 							{
 							"deviceName" : "Xiaomi Poco M2 pro (Gram)",
@@ -156,6 +161,11 @@
 								"maintainer": "Sarthak"
 							},
 							{
+								"deviceName" : "Realme C2 (rmx1941)",
+								"buildVersion" : "v3.4",
+								"maintainer": "Abhishek & Sakthivel"
+							},
+							{
 								"deviceName" : "Realme C3/C3i/Narzo 10a (rmx2020)",
 								"buildVersion" : "v3.4",
 								"maintainer": "Sarthak"
@@ -166,9 +176,9 @@
 								"maintainer": "Aryan"
 							},
 							{
-								"deviceName" : "Realme X (RMX1901)",
+								"deviceName" : "Realme U1 (RMX1831)",
 								"buildVersion" : "v3.4",
-								"maintainer": "Sanyam"
+								"maintainer": "Lokesh"
 							}
 							]
 	},
@@ -199,6 +209,12 @@
 								"deviceName" : "Asus Zenfone Max Pro M1 (X00TD)",
 								"buildVersion" : "v3.4",
 								"maintainer": "Rajat"
-							}]
+							},
+							{
+								"deviceName" : "Asus Zenfone Max Shot/Plus M2 (a001d)",
+								"buildVersion" : "v3.4",
+								"maintainer": "Matheus"
+							}
+							]
 	}
 ]
