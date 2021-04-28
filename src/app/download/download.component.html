@@ -1,23 +1,27 @@
-<div class="container_with_accordion">
-  <p class="page_label">PixelPlusUI - All Device Download(s) </p>
-    <div class="moving_text">
+<div class="container-fluid">
+  <div class="header">
+    <h1> Device Download(s) </h1>
+  </div>
+  <div class="moving_text">
     <span>"If your device isn't mention here, please contact your community developer to build this ROM and take maintainership."</span>
-    </div>
-  <mat-accordion *ngFor="let device of fetchArtifactDetails"> 
-      <mat-expansion-panel class="expansion_container">
-          <mat-expansion-panel-header class="expansion_header">
+  </div>
+  <mat-accordion> 
+    <div *ngFor="let device of fetchArtifactDetails" class="d-flex justify-content-center">
+      <mat-expansion-panel class="container"> 
+        <mat-expansion-panel-header class="expansion_header">
           <mat-panel-title> {{device.deviceCategory}} </mat-panel-title>
-          </mat-expansion-panel-header>
-          <div *ngFor="let arti of device.deviceDetails">
-            <mat-card class="artifact_card">
-              <div class="artifact_details">
-                <mat-card-title>{{arti.deviceName}}</mat-card-title>
-                <mat-card-subtitle>{{arti.buildVersion}}</mat-card-subtitle>
-                <mat-card-subtitle>{{arti.maintainer}}</mat-card-subtitle>
-              </div>
-              <button mat-button> <a href="https://www.pling.com/p/1499070/#files-panel">Download Build</a></button>
-            </mat-card>
-          </div>
+        </mat-expansion-panel-header>
+        <div *ngFor="let arti of device.deviceDetails">
+          <mat-card class="artifact_card">
+            <div class="artifact_details">
+              <mat-card-title>Device : {{arti.deviceName}}</mat-card-title>
+              <mat-card-subtitle>Version : {{arti.buildVersion}}</mat-card-subtitle>
+              <mat-card-subtitle>Maintainer : {{arti.maintainer}}</mat-card-subtitle>
+            </div>
+            <button mat-button> <a href="https://www.pling.com/p/1499070/#files-panel">Download Build</a></button>
+          </mat-card>
+        </div>
       </mat-expansion-panel>
+    </div>
   </mat-accordion>
 </div>

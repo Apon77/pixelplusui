@@ -5,6 +5,7 @@
 }
 .nav-item .nav-link{
     color: white !important;
+    padding: 0.5rem 0.7rem;
     cursor: pointer; 
     display: inline-flex;
     text-transform: uppercase;
@@ -17,14 +18,13 @@
     height: 1.5rem; 
     margin: 0 -1.5rem 0.25rem 0;
 }
-.nav-item .nav-link:hover{ background-color: #ebebeb38; }
-.nav-item .nav-link:active{
-    background-color: #ec2020;
+.is-active{
+    background-color: #ffffff41;
     color: white;
     font-weight: 600;
 }
 
-@media only screen and (min-width: 992px){
+@media (min-width: 768px) and (max-width: 1921px){
     .navbar-brand{ margin: 0 10rem 0 3.25rem; }
     .nav-item .nav-link{
         font-weight: 550;
@@ -33,7 +33,8 @@
     }
     .nav-item img{ margin: 0 -0.70rem 0.25rem 0.5rem; }
 }
-@media only screen and (max-width: 600px){
+
+@media (min-width: 320px) and (max-width: 768px) {
     .nav-item{ text-align: center; }
     .nav-item img{ margin: 0; }
 }

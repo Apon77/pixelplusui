@@ -15,16 +15,6 @@ body {
 
                 // Changelog & Download styles
 
-.container_with_accordion{
-    align-items: center;
-    justify-content: center;
-  }
-.page_label{ 
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-align: center;
-    margin: 2rem !important;
-}
 .expansion_header, .expansion_header:hover{
     height: 4rem;
     background: rgb(204,66,69) !important;
@@ -34,12 +24,21 @@ body {
     color: white; 
     font-size: large; 
 }
-@media (min-width: 320px) and (max-width: 480px){
-    .mat-expansion-panel-body { padding: 0 5px 16px !important; }
-}
 .mat-expansion-panel{ background: unset;}
 .mat-expansion-indicator, .mat-expansion-indicator::after{ color: white; font-size: large; }
+@media (min-width: 320px) and (max-width: 768px){
+    .expansion_header, .expansion_header:hover{ height: 2rem; }
+    .expansion_header mat-panel-title{ font-size: smaller; }
+    .mat-expansion-panel-body { padding: 0 5px 16px !important; }
+}
 
 
                 // Shared style
-.carousel-item, .text_center{ text-align: center;}
+.header {
+    text-align: center;
+    padding: 32px;
+}
+.header h1{  
+    text-transform: uppercase;
+    font-weight: 500;
+}

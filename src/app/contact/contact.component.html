@@ -1,15 +1,24 @@
-<div class="contact_container">
-    <p class="contact_label text_center">Connect with us here</p>
-    <div class="contact_card">
-        <mat-card class="telegram_card text_center">
-            <mat-card-title>Telegram</mat-card-title>
-            <mat-card-subtitle>Group  : <a href="https://t.me/ppuichat"> https://t.me/ppuichat </a> </mat-card-subtitle>
-            <mat-card-subtitle>Channel  : <a href="https://t.me/ppuich"> https://t.me/ppuich </a> </mat-card-subtitle>
-        </mat-card>
-        <mat-card class="email_card text_center">
-            <mat-card-title>E-mail address</mat-card-title>
-            <mat-card-subtitle> Kostyajrz : <a href="https://kostyajrzaws@gmail.com"> kostyajrzaws@gmail.com </a> </mat-card-subtitle>
-            <mat-card-subtitle> Saurav : <a href="https://dwarmachine24@gmail.com"> dwarmachine24@gmail.com </a> </mat-card-subtitle>
-        </mat-card>
+<div class="container-fluid">
+   <div class="contact_form">
+    <div class="header">
+        <h1>contact Us</h1>
     </div>
+    <div class="flex contact_label">
+        <img src="./assets/images/telegram.png" alt="telegram">
+        <span> Telegram </span>
+    </div>  
+    <mat-card class="contact_card">
+        <button mat-flat-button> <a href="https://t.me/ppuichat"> Group </a> </button>
+        <button mat-flat-button class="ml_4"> <a href="https://t.me/ppuich"> Channel </a> </button>
+    </mat-card>
+
+    <div class="flex contact_label">
+        <mat-icon class="mail_icon">mail</mat-icon>
+        <span> E-mail </span>
+    </div>   
+    <mat-card class="contact_card">
+        <button mat-flat-button> <a href="mailto:kostyajrzaws@gmail.com"> Kostyajrz </a> </button>
+        <button mat-flat-button class="ml_4"> <a href="mailto:dwarmachine24@gmail.com"> Saurav </a> </button>
+    </mat-card>
+   </div>
 </div>

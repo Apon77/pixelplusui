@@ -1,47 +1,73 @@
+.contact_form{
+  color: white;
+  padding: 2rem;
+}
 .contact_label{ 
-  text-transform: uppercase;
+  width: 100%; 
   font-weight: bold;
-  color: #fff;
-  padding-top: 3rem;
+  margin-bottom: 2.25rem; 
+  text-transform: uppercase; 
+  justify-content: center;
 }
-.telegram_card, .email_card{
-    border-radius: 40px;
-    background-color: #e0594d;
-    color: white;
+.contact_card{ 
+  display: flex;
+  background-color: transparent !important; 
+  justify-content: center;
 }
-.telegram_card mat-card-subtitle, .email_card mat-card-subtitle,
-.telegram_card a, .email_card a{ 
-    color: white;  
-    font-size: 17px;
+.contact_label{ font-size: 1.5rem; }
+img{ height: 2rem; }
+.contact_card a{ 
+  color: white; 
+  font-size:1.75rem;
+  text-decoration: none;
 }
-.telegram_card a, .email_card a{ 
-    text-decoration: none;
-    cursor: pointer;
+.contact_card button{
+  width: 18rem;
+  background: none !important;
+  border: 1px solid #ff5054;
 }
+.ml_4{ margin-left: 4rem;}
 
-@media (min-width: 992px) and (min-width: 1200px){
-  .contact_label{  font-size: 2rem; }
-  .contact_card{ 
-    display: flex;
-    margin: 4rem 9rem;
+@media (min-width: 1200px) and (max-width: 1921px){
+  .contact_label{ margin-top: 2rem; }
+  .mail_icon{ 
+    font-size: 1.75rem;
+    margin: -0.3rem 1.5rem 0 0;
   }
-  .telegram_card, .email_card{
-    padding: 3rem;
-    margin: 0 2rem;
-  }
-  .telegram_card mat-card-subtitle, .email_card mat-card-subtitle,
-  .telegram_card a, .email_card a { margin: 2rem; }
+  img{ margin: -0.4rem 1rem 0 0;}
+  .contact_card button{ height: 6rem; }
 }
-@media (min-width: 320px) and (max-width: 480px){
-  .contact_label{ font-size: 1.5rem; }
-  .contact_card{ 
-    margin: 2rem 1rem;
+@media (min-width: 992px) and (max-width: 1200px){
+  .contact_label{ margin-top: 4rem; }
+  .mail_icon{ 
+    font-size: 1.7rem;
+    margin: -0.25rem 1.5rem 0 0;
   }
-  .telegram_card, .email_card{
-    padding: 1rem;
-    margin: 1rem 0.5rem;
-    height: 10rem;
+  img{ margin: -0.4rem 1rem 0 0; }
+  .contact_card button{ height: 5rem; }
+}
+@media (min-width:768px) and (max-width:992px) {
+  .contact_label{ margin-top: 4rem;  }
+  .mail_icon{ 
+    font-size: 1.75rem;
+    margin: -0.2rem 1.25rem 0 0;
   }
-  .telegram_card mat-card-subtitle{ margin: 1.25rem; }
-  .email_card mat-card-subtitle{ margin: 0.75rem; }
+  img{ margin: -0.4rem 1rem 0 0;}
+  .contact_card button{ height: 5rem; }
+}
+@media (min-width: 320px) and (max-width: 768px){
+  .contact_label{  
+    font-size: 1.25rem !important; 
+    margin: 2rem 0 1rem 0 !important;
+  }
+  .mail_icon{ 
+    font-size: 1.25rem; 
+    margin: 0 0.5rem 0 0;
+  }
+  img{  
+    height: 1.5rem !important;
+    margin: -0.3rem 0.5rem 0 0;
+  }
+  .contact_card button{ height: 3rem; }
+  .contact_card a{ font-size:1rem !important; } 
 }

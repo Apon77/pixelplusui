@@ -1,10 +1,10 @@
-.container_with_accordion{ padding-bottom: 2rem; }
+.container{ margin-bottom: 1rem;}
 .expansion_header mat-panel-title{ font-weight: 500; }
 .artifact_card{
   background-color: transparent;
   border: 1px solid rgb(204,66,69);
   color: #fff;
-  margin: 1rem 0;
+  margin-block-start: 1rem;
 }
 .artifact_card mat-card-title{ 
   font-size: 1rem;
@@ -15,82 +15,107 @@
   background: rgb(204,66,69) !important;
   background: linear-gradient(90deg, rgba(204,66,69,1) 0%, rgba(9,9,9,1) 75%) !important;
   height: 3rem !important;
-  margin-top: 1.75rem;
 }
-.artifact_card button a{
-  font-size: large;
-  text-decoration: none;
-}
-.artifact_details{  margin: 0 3rem; }
-@media (min-width: 992px) and (min-width: 1200px){
-  .expansion_container{
-      margin: 2rem 22rem; 
-      width: 50%;
+.artifact_card button a{ text-decoration: none; }
+
+@media (min-width: 1200px) and (max-width: 1921px){
+  .artifact_card{ 
+    display: flex; 
+    width: auto;
   }
-  .artifact_details{  width: 50%; }
-  .artifact_card{ display: flex; }
-
-  // scroll text animation
-.moving_text {
-  height: 50px;  
-  overflow: hidden;
-  position: relative;
- }
-.moving_text span {
-    font-size: 1.5em;
-    color: #fff;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    line-height: 50px;
-    text-align: center;
-
-    /* Starting position */
-    -moz-transform:translateX(100%);
-    -webkit-transform:translateX(100%);  
-    transform:translateX(100%);
-
-    /* Apply animation to this element */  
-    -moz-animation: moving_text 15s linear infinite;
-    -webkit-animation: moving_text 15s linear infinite;
-    animation: moving_text 15s linear infinite;
- }
-
- /* Move it (define the animation) */
- @-moz-keyframes moving_text {
-  0%   { -moz-transform: translateX(100%); }
-  100% { -moz-transform: translateX(-100%); }
- }
- @-webkit-keyframes moving_text {
-  0%   { -webkit-transform: translateX(100%); }
-  100% { -webkit-transform: translateX(-100%); }
- }
- @keyframes moving_text {
-  0%   { 
-    -moz-transform: translateX(100%); 
-    -webkit-transform: translateX(100%); 
-    transform: translateX(100%);     
-      }
-  100% { 
-    -moz-transform: translateX(-100%); 
-    -webkit-transform: translateX(-100%); 
-    transform: translateX(-100%); 
-       }
- }
+  .artifact_details{  
+    width: 70%;
+    padding-left: 2rem;
+  }
+  .artifact_card button{ margin-top: 1.75rem; }
+  .artifact_card button a{ font-size: large; }
 }
-
-@media (min-width: 320px) and (max-width: 480px){
-  .expansion_container{ margin: 2rem 2rem; }
+@media (min-width: 992px) and (max-width: 1200px){
+  .artifact_card{ display: flex; }
+  .artifact_details{  
+    width: 70%;
+    padding-left: 2rem;
+  }
+  .artifact_card button{ margin-top: 1.75rem; }
+  .artifact_card button a{ font-size: large; }
+}
+@media (min-width:768px) and (max-width:992px) {
+  .artifact_card{ display: flex; }
+  .artifact_details{  
+    width: 70%;
+    padding-left: 2rem;
+  }
+  .artifact_card button{ margin-top: 1.75rem; }
+  .artifact_card button a{ font-size: large; }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .header{ padding: 20px;}
+  .header h1{ font-size: 1rem;}
   .artifact_card{ text-align: center; }
-
+  .artifact_card mat-card-subtitle{
+    margin-bottom: 0.25rem;
+    font-size: smaller;
+  }
+  .artifact_card button{ margin-top: 0.75rem; }
   .moving_text {
-    padding: 0 2rem;
+    padding-bottom: 1.25rem;
     text-align: center;
   }
  .moving_text span {
-  font-size: 1.25em;
-  color: #fff;
+    font-size: 0.75rem;
+    color: #fff;
  }
 }
 
+                          // scroll text animation
+@media (min-width:768px) and (max-width: 1921px){
+    
+  .moving_text {
+    height: 50px;  
+    overflow: hidden;
+    position: relative;
+   }
+  .moving_text span {
+      font-size: 1.5em;
+      color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      line-height: 50px;
+      text-align: center;
+  
+      /* Starting position */
+      -moz-transform:translateX(100%);
+      -webkit-transform:translateX(100%);  
+      transform:translateX(100%);
+  
+      /* Apply animation to this element */  
+      -moz-animation: moving_text 15s linear infinite;
+      -webkit-animation: moving_text 15s linear infinite;
+      animation: moving_text 15s linear infinite;
+   }
+  
+   /* Move it (define the animation) */
+   @-moz-keyframes moving_text {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes moving_text {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes moving_text {
+    0%   { 
+      -moz-transform: translateX(100%); 
+      -webkit-transform: translateX(100%); 
+      transform: translateX(100%);     
+        }
+    100% { 
+      -moz-transform: translateX(-100%); 
+      -webkit-transform: translateX(-100%); 
+      transform: translateX(-100%); 
+         }
+   }
+  
+}

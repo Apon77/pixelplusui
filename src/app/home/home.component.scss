@@ -1,13 +1,7 @@
-                    // Home container 
-.home_container{
-    display: flex;
-    width: 100%;
-}
 .left_panel h1{
     color: #DB4437;
     text-transform: uppercase;
 }
-
                     // Features container
 .feature_card{
     margin: 1rem;
@@ -33,35 +27,31 @@
 .git_icon{ height: 30px; }
 
                 // Download and Donate container
+.download_donate, .team, .features{  margin-bottom: 3rem; }
 .download_card, .donate_card{
-    height: 17rem;
-    padding: 30px;
     line-height: 1.5;
-    border-radius: 40px;
-    background-color: #fff;
+    text-align: center;
+    background-color:black;
 }
 .download_card mat-card-subtitle, .donate_card mat-card-subtitle{ 
-    font-size:large;
-    color: black;
+    font-size:1rem;
+    color: white;
+    text-align: center;
 }
 .download_btn, .donate_btn{ 
     background-color: #DB4437; 
     border-radius: 40px;
 }
-
                     // Shared
-.feature_label, .team_label, .download_donate_label{
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 2rem;
-    font-weight: bold; 
+.feature_card, .team_card{ 
+    border-radius: 25px; 
+    text-align: center;
 }
-.feature_card, .team_card{ border-radius: 25px; }
 .feature_card mat-card-subtitle, .feature_card mat-card-title,
- .download_btn, .donate_btn{ color: #fff; }
+.download_btn, .donate_btn{ color: #fff; }
 
-@media (min-width: 992px) and (min-width: 1200px){
-    .home_container{ 
+@media (min-width: 1200px) and (max-width: 1921px){
+    .home{ 
         padding-top: 4rem;
         padding-bottom: 2.5rem;
     }
@@ -78,42 +68,121 @@
     .left_panel p{ font-size: 1.5rem; }
     .right_panel img{ width: 390px; }
 
-    .features_container{ padding: 3rem 13rem;}
-    .feature_label{ font-size: xxx-large; }
     .feature_card{
         width: 17rem;
         line-height: 1.5;
     }
     .feature_card mat-card-subtitle { font-size: medium; }
 
-    .team_container{ padding: 3rem 13.7rem; }
-    .team_label{ font-size: xxx-large;}
     .team_card{
         width: 16rem;
         margin: 15px 20px;
     }
     .team_card .avatar{ height: 100px; }
 
-    .download_donate_container{ margin: 4rem 20rem;}
-    .download_donate_label{ font-size: xxx-large; }
     .download_card, .donate_card{ 
-        margin: 2rem 1rem 0 0;
-        width: 21rem;
+        margin: -2rem 1rem 0 2rem;
+        width: 24rem;
     }
     .download_btn, .donate_btn{ 
-        font-size: x-large;
-        height: 5rem;
-        width: 15rem;
+        font-size: large;
+        height: 4rem;
+        width: 14rem;
         margin-top: 1rem;
     }
 }
+@media (min-width: 992px) and (max-width: 1200px){
+    .home{ 
+        padding-top: 4rem;
+        padding-bottom: 2.5rem;
+    }
+    .left_panel, .right_panel{ width: 50%; }
+    .left_panel{ 
+        margin-left: 5rem;
+        margin-top: 6rem;
+    }
+    .left_panel h1{
+        font-size: 4.5rem;
+        font-weight: bold;
+        line-height: 1;    
+    }
+    .left_panel p{ 
+        font-size: 1.35rem;
+        line-height: 1.25; 
+    }
+    .right_panel img{ width: 390px; }
 
-@media (min-width: 320px) and (max-width: 480px){
-    .home_container{ padding-top: 2rem;}
+    .feature_card{
+        width: 17rem;
+        line-height: 1.5;
+    }
+    .feature_card mat-card-subtitle { font-size: medium; }
+
+    .team_card{
+        width: 16rem;
+        margin: 15px 20px;
+    }
+    .team_card .avatar{ height: 100px; }
+
+    .download_card, .donate_card{ 
+        margin: -2rem 1rem 0 2rem;
+        width: 24rem;
+     }
+    .download_btn, .donate_btn{
+        font-size: medium;
+        height: 3rem;
+        width: 10rem;
+     }
+}
+@media (min-width:768px) and (max-width:992px) {
+    .home{ 
+        padding-top: 4rem;
+        padding-bottom: 2.5rem;
+    }
     .left_panel, .right_panel{ width: 50%; }
     .left_panel{ 
         margin-left: 1.5rem; 
-        margin-top: 2rem;
+        margin-top: 4rem; 
+    }
+    .left_panel h1{
+        font-size: 4.5rem;
+        font-weight: bold;
+        line-height: 1;    
+    }
+    .left_panel p{ 
+        font-size: 1.25rem;
+        line-height: 1.5; 
+    }
+    .right_panel img{ width: 390px; }
+
+    .feature_card{
+        width: 17rem;
+        line-height: 1.5;
+    }
+    .feature_card mat-card-subtitle { font-size: medium; }
+
+    .team_card{
+        width: 16rem;
+        margin: 1rem;
+    }
+    .team_card .avatar{ height: 100px; }
+
+    .download_card, .donate_card{ 
+        margin: -1.5rem 1rem 0 1rem;
+        width: 16rem;
+     }
+    .download_btn, .donate_btn{
+        font-size: medium;
+        height: 3rem;
+        width: 10rem;
+     }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    .home{ padding-top: 2rem;}
+    .left_panel, .right_panel{ width: 50%; }
+    .left_panel{ 
+        margin-left: 1.25rem;
+        margin-top: 1.70rem;
     }
     .left_panel h1{
         font-weight: bold;  
@@ -121,23 +190,23 @@
     }
     .right_panel img{ width: 200px; }
 
-    .features_container{ padding: 2rem 4rem; }
-    .feature_label{ font-size: 1.23rem; }
-    .feature_card{ width: 13rem; }
-    .feature_card mat-card-title{ font-size: 1.30rem; }
+    .feature_card{ 
+        width: 18rem; 
+        height: 10rem;
+    }
+    .feature_card mat-card-title{ font-size: 1.5rem; }
     .feature_card mat-card-subtitle { margin-top: 1rem; }
 
-    .team_container{ padding: 2rem 4rem; }
-    .team_label{ font-size: 1.23rem; }
     .team_card{
         width: 14rem;
-        margin: 15px 22px;
+        margin: 1rem;
     }
     .team_card .avatar{ height: 80px; }
     .mat-card-header mat-card-title{ font-size: 16px;}
 
-    .download_donate_container{ padding: 2rem 4rem; }
-    .download_donate_label{ font-size: 1.23rem; }
+    .features, .team, .download_donate{ margin-top: 2rem;}
+    .features .header, .team .header, .download_donate .header{ padding: 0 !important;}
+
     .download_card, .donate_card{ 
         margin: 1rem 0 0 0;
         width: 15rem;

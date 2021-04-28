@@ -1,13 +1,17 @@
-<div class="container_with_accordion">
-    <p class="page_label">PixelPlusUI - All Version Update Changelogs </p>
-    <mat-accordion *ngFor="let ch of changeLogDetails"> 
-        <mat-expansion-panel class="expansion_container">
-            <mat-expansion-panel-header class="expansion_header">
-            <mat-panel-title> {{ch.versionNo}} </mat-panel-title>
-            </mat-expansion-panel-header>
-            <mat-list role="list" *ngFor="let desc of ch.versionDetails">
-            <mat-list-item role="versionDesc"> <mat-icon class="star">star_outline</mat-icon> {{desc}} </mat-list-item>
-            </mat-list>
-        </mat-expansion-panel>
+<div class="container-fluid">
+    <div class="header">
+        <h1> All Version Update Changelogs </h1>
+    </div>
+    <mat-accordion> 
+        <div *ngFor="let ch of changeLogDetails" class="d-flex justify-content-center">
+            <mat-expansion-panel class="container">
+                <mat-expansion-panel-header class="expansion_header">
+                <mat-panel-title> {{ch.versionNo}} </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-list role="list" *ngFor="let desc of ch.versionDetails">
+                <mat-list-item role="versionDesc"> <mat-icon class="star">star_outline</mat-icon> {{desc}} </mat-list-item>
+                </mat-list>
+            </mat-expansion-panel>
+        </div>
     </mat-accordion>
 </div>

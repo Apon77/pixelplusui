@@ -7,37 +7,37 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContentLG">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" (click)="goToHome()"> 
+          <a class="nav-link" [routerLink]="['/home']" [routerLinkActive]="['is-active']"> 
             <mat-icon>home</mat-icon>
             <span> Home </span>
           </a>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link" (click)="goToDownload()">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/download']" [routerLinkActive]="['is-active']">
             <mat-icon>download</mat-icon>
             <span> Download </span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" (click)="goToChangeLog()">
+          <a class="nav-link" [routerLink]="['/changelog']" [routerLinkActive]="['is-active']">
             <mat-icon>article</mat-icon>
             <span> Changelogs </span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" (click)="goToDonate()"> 
+          <a class="nav-link" [routerLink]="['/donate']" [routerLinkActive]="['is-active']"> 
             <mat-icon>paid</mat-icon>
             <span> Donate </span> 
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" (click)="goToGallery()">
+          <a class="nav-link" [routerLink]="['/gallery']" [routerLinkActive]="['is-active']">
             <mat-icon>collections</mat-icon>
             <span> Gallery </span> 
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" (click)="goToContact()">
+          <a class="nav-link" [routerLink]="['/contact']" [routerLinkActive]="['is-active']">
             <mat-icon>alternate_email</mat-icon>
             <span> Contact </span>
           </a>

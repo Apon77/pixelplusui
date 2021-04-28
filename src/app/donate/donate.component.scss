@@ -1,35 +1,17 @@
-.label{ 
-    color: #DB4437;
-    font-weight: bold;
-    text-transform: uppercase;
+.donate mat-card{ 
+    border-radius: 2rem;
+    margin: 2rem; 
+    padding: 1.5rem;
+    text-align: center;
 }
-.donate_container mat-card{ border-radius: 2rem; }
-.donate_container mat-card-subtitle{ 
+.donate mat-card-subtitle{ 
     color: black;
     font-weight: 500;
     font-size: 0.95rem;
 }
-@media (min-width: 992px) and (min-width: 1200px){
-    .donate_container{ margin: 4rem 10rem; }
-    .label{ font-size: 3rem; }
-    .donate_container mat-card{
-        width: 17rem;
-        margin: 4rem 2rem 2rem 2rem;
-    }
-    .donate_container img{
-        height: 10rem;
-        width: 10rem;
-    }
-}
-@media (min-width: 320px) and (max-width: 480px){
-    .donate_container{ margin: 3rem; }
-    .label{ font-size: 1.5rem; }
-    .donate_container mat-card {
-        width: 28rem;
-        margin: 1rem 0;
-    }
-    .donate_container img{
-        height: 8rem;
-        width: 8rem;
-    }
+@media (min-width: 320px) and (max-width: 768px){
+    .header{ padding: 20px;}
+    .header h1{ font-size: 1rem; }
+    .paypal img, .gpay img, .paytm img{ height: 11rem; }
+    .gpay, .paytm{ width: 17rem;}
 }
