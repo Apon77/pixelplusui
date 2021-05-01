@@ -123,6 +123,14 @@
 							]
 	},
 	{
+		"deviceCategory" : "Nokia Devices",
+		"deviceDetails" :   [{
+								"deviceName" : "Nokia 6.1 Plus (DRG_sprout)",
+								"buildVersion" : "v3.4",
+								"maintainer": "Saurav"
+							}]
+	},
+	{
 		"deviceCategory" : "Lenovo Devices",
 		"deviceDetails" :  [{
 								"deviceName" : "Lenovo Z5s (jd2019)",
