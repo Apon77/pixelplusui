@@ -75,6 +75,11 @@
 								"deviceName" : "Redmi Note 9 Pro (curtana/joyeuse/excalibur)",
 								"buildVersion" : "v3.4",
 								"maintainer": "Edgars"
+							},
+							{
+							"deviceName" : "Redmi K30 (Phoenix)",
+							"buildVersion" : "v3.4",
+							"maintainer": "Kunal"
 							}
 							]
 	},
@@ -85,6 +90,11 @@
 							"deviceName" : "Xiaomi Poco F1 (beryllium)",
 							"buildVersion" : "v3.4",
 							"maintainer": "David"
+							},
+							{
+							"deviceName" : "Xiaomi Poco X2 (Phoenix)",
+							"buildVersion" : "v3.4",
+							"maintainer": "Kunal"
 							},
 							{
 							"deviceName" : "Xiaomi Poco X3 (Surya)",
@@ -159,14 +169,24 @@
 								"maintainer": "Eyvd "
 							},
 							{
-								"deviceName" : "Realme 2 Pro (RMX1801)",
+								"deviceName" : "Realme 5/5i/5s Unified (RMX1911/1925/2030)",
 								"buildVersion" : "v3.4",
-								"maintainer": "Abhishek"
+								"maintainer": "Utkarsh "
 							},
 							{
 								"deviceName" : "Realme 7/Narzo 20 Pro (RMX2151) ",
 								"buildVersion" : "v3.4",
 								"maintainer": "Sarthak"
+							},
+							{
+								"deviceName" : "Realme 2 Pro (RMX1801)",
+								"buildVersion" : "v3.4",
+								"maintainer": "Abhishek"
+							},
+							{
+								"deviceName" : "Realme 3 Pro (RMX1851)",
+								"buildVersion" : "v3.4",
+								"maintainer": "Nikhil"
 							},
 							{
 								"deviceName" : "Realme C2 (rmx1941)",
